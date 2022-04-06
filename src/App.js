@@ -7,24 +7,19 @@ function App() {
       <div className="container">
         <div className="primary-button">
           <p>Primary</p>
-          <Button $type="primary" $width="sm" $size="sm" $color="primaryColor" >
-            Default
-          </Button>
+
+          <Button>Disabled</Button>
         </div>
 
         {/*  */}
         <div className="primary-button">
           <p>Secondary</p>
-          <Button $type="Secondary" $width="base" $size="base" $color="secondaryColor">
-            Default
-          </Button>
+          <Button $type="Secondary" $width='30%'>Default</Button>
         </div>
 
         <div className="primary-button">
           <p>Gray</p>
-          <Button $type="Gray" $width="lg" $size="lg" $color="GrayColor" >
-            Default
-          </Button>
+          <Button $type="Gray">Default</Button>
         </div>
       </div>
     </>
