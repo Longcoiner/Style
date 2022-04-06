@@ -23,18 +23,18 @@ function Button({
   // Secondary
   if ($type === "Secondary") {
     return (
-      <Secondary $width={$width} $size={$size} disabled={isDisabled} {...rest}>
+      <SecondaryButton $width={$width} $size={$size} disabled={isDisabled} {...rest}>
         {children}
-      </Secondary>
+      </SecondaryButton>
     );
   }
 
   // gray
   if ($type === "Gray") {
     return (
-      <Gray $width={$width} $size={$size} disabled={isDisabled} {...rest}>
+      <GrayButton $width={$width} $size={$size} disabled={isDisabled} {...rest}>
         {children}
-      </Gray>
+      </GrayButton>
     );
   }
 }
