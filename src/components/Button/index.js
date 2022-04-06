@@ -5,28 +5,30 @@ import { useState } from "react";
 
 function Button({
   $type,
-  $width = "100%",
-  $size = "20px",
+  $width ,
+  $size ,
   isDisabled,
   children,
+  $color,
   ...rest
 }) {
   // primary
-  if ($type === "primary") {
+  if ($type === "primary" ) {
     return (
-      <ButtonBase $width={$width} $size={$size} disabled={isDisabled} {...rest}>
+      <ButtonBase $width={$width} $size={$size} $color={$color} disabled={isDisabled} {...rest}>
         {children}
       </ButtonBase>
     );
   }
 
   // Secondary
-  if ($type === "Secondary") {
+  if ($type === "Secondary" ) {
     return (
       <SecondaryButton
         $width={$width}
         $size={$size}
         disabled={isDisabled}
+        $color={$color}
         {...rest}
       >
         {children}
@@ -37,7 +39,7 @@ function Button({
   // gray
   if ($type === "Gray") {
     return (
-      <GrayButton $width={$width} $size={$size} disabled={isDisabled} {...rest}>
+      <GrayButton $width={$width} $size={$size} disabled={isDisabled} $color={$color} {...rest}>
         {children}
       </GrayButton>
     );

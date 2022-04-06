@@ -13,11 +13,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
         <Routes>
-          <Route path="/style-guide" element={<App/>}>
-            {/* <App /> */}
-          </Route>
+          <Route path="/style-guide" element={<App/>}/>
+         
         </Routes>
-      
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
