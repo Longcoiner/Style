@@ -6,7 +6,7 @@ import { useState } from "react";
 function Button({
   $type,
   $width = "100%",
-  $size = '20px',
+  $size = "20px",
   isDisabled,
   children,
   ...rest
@@ -23,7 +23,12 @@ function Button({
   // Secondary
   if ($type === "Secondary") {
     return (
-      <SecondaryButton $width={$width} $size={$size} disabled={isDisabled} {...rest}>
+      <SecondaryButton
+        $width={$width}
+        $size={$size}
+        disabled={isDisabled}
+        {...rest}
+      >
         {children}
       </SecondaryButton>
     );

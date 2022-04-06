@@ -2,57 +2,72 @@ import { hover } from "@testing-library/user-event/dist/hover";
 import styled from "styled-components";
 
 export const ButtonBase = styled.button`
+  font-family: Roboto;
+  height:40px;
   display: block;
-  background-color: red;
+  background-color: #ff0000;
   color: #ffff;
-  padding: 5px 10px;
+  padding: 8px, 24px, 8px, 24px;
   border: none;
-  border-radius: 5%;
+  border-radius: 4px;
+  line-height: 24px;
+  font-weight: 700;
   width: ${(props) => props.$width && props.$width};
   font-size: ${(props) => props.$size && props.$size};
   margin-bottom: 10px;
   &:hover {
-    background-color: #ccc;
-    color: black;
-  };
+    width: 93px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: #FFFFFF;
+  }
   &:active {
-    background-color: blue;
-    color: red;
-  };
+    width:110px;
+    background-color: #C20000;
+    color: #FFFFFF;
+  }
   &:disabled {
-    background-color: #ddd;
-  };
+    width:105px;
+    background-color: #999999;
+  }
 `;
 
 export const SecondaryButton = styled(ButtonBase)`
+  background-color:transparent;
+  border: 2px solid #FF0000;
+  color:#FF0000;
   &:hover {
-    background-color: green;
-    color: black;
+    background-color:transparent;
+    border: 2px solid #FF0000;
+    color: #FF0000;
   }
   &:active {
-    background-color: yellow;
-    color: black;
+    width:120px;
+    background-color:transparent;
+    border: 2px solid #FF0000;
+    color: #FF0000;
   }
   &:disabled {
-    background-color: #ddd;
-    color: black;
+    background-color:transparent;
+    border: 2px solid #999999;
+    color: #999999;
   }
 `;
 
 // gray
 export const GrayButton = styled(ButtonBase)`
-    &:hover {
-      background-color: blue;
-      color: black;
-    }
-    &:active {
-      background-color: yellow;
-      color: red;
-    }
-    &:disabled {
-      background-color: #ddd;
-      color: black;
-    }
+  background-color:#FF0000;
+  &:hover {
+    width:100%;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: #FFFFFF;
+  }
+  &:active {
+    background-color: #C20000;
+    color: #FFFFFF;
+  }
+  &:disabled {
+    width:100%;
+    background-color: #999999;
+    color: #FFFFFF;
+  }
 `;
-
-
