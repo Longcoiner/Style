@@ -1,4 +1,4 @@
-import { ButtonBase, Secondary, Gray } from "./styled";
+import { ButtonBase, SecondaryButton, GrayButton } from "./styled";
 import { useState } from "react";
 
 // defaultProps;
