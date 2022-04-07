@@ -32,13 +32,14 @@ code {
   width: 30%;
   margin-bottom:40px
 }
-.primary-button p{
-  text-align: center;
+ p{
+  /* text-align: center; */
   font-size: 15px;
   font-weight: 800;
   opacity: 0.5;
   position: relative;
   top: -50px;
+  right: -80px;
 }
 .btn button{
     display: block;

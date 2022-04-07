@@ -1,4 +1,4 @@
-import { ButtonBase, SecondaryButton, GrayButton } from "./styled";
+import {  SecondaryButton, GrayButton, PrimaryButton } from "./styled";
 import { useState } from "react";
 
 // defaultProps;
@@ -15,7 +15,7 @@ function Button({
   // primary
   if ($type === "primary") {
     return (
-      <ButtonBase
+      <PrimaryButton
         $width={$width}
         $size={$size}
         $color={$color}
@@ -23,7 +23,7 @@ function Button({
         {...rest}
       >
         {children}
-      </ButtonBase>
+      </PrimaryButton>
     );
   }
 

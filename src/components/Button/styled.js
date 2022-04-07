@@ -14,7 +14,6 @@ const color = {
 };
 
 export const ButtonBase = styled.button`
-  font-family: Roboto;
   display: block;
   background-color: #ff0000;
   color: ${(props) =>
