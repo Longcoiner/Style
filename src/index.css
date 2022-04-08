@@ -23,6 +23,9 @@ code {
   justify-content: space-between;
 }
 
+form{
+  display: flex;
+}
 
 
 /* primary-btn */

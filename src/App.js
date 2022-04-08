@@ -1,12 +1,7 @@
 import "./App.css";
-import Button from "./components/Button";
+// import Button from "./components/Button";
 import Input from "./components/Login";
-import {
-  Container,
-  InputContainer,
-  ErrorText,
-  ErrorBorder,
-} from "./components/Login/styled";
+import { Container, InputContainer, Icon, Title } from "./components/Login/styled";
 
 function App() {
   return (
@@ -30,30 +25,27 @@ function App() {
         </div>
       </div> */}
 
-
-
-
       {/* Login  */}
       <Container>
         {/* default  */}
-        <InputContainer>
-          <p>Default</p>
-          <i className="fa-solid fa-circle-user"></i>
-          <Input $type="Default" error="false"  ></Input>
-        </InputContainer>
+        <form>
+            <Title>Default</Title>
+          <InputContainer>
+            <Input $type="default" disabled error />
+          </InputContainer>
 
-        {/* password  */}
-        <InputContainer>
-          <p>Password</p>
+          {/* password  */}
+            <Title>Password</Title>
+          <InputContainer>
+            <Input $type="password"  />
+          </InputContainer>
 
-          <Input $type="Password"></Input>
-        </InputContainer>
-
-        {/* Name  */}
-        <InputContainer>
-          <p>Name</p>
-          <Input $type="Name"></Input>
-        </InputContainer>
+          {/* Name  */}
+            <Title>Name</Title>
+          <InputContainer>
+            <Input $type="name"  />
+          </InputContainer>
+        </form>
       </Container>
     </>
   );
